@@ -16,7 +16,7 @@ export const Seminars: React.FC = () => {
             <span>Attendance &amp; Workshops</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Seminars &amp; Webinars
+            Seminars / Webinars
           </h2>
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Certificates of attendance for technical webinars, IT workshops, and educational seminars.
@@ -28,7 +28,7 @@ export const Seminars: React.FC = () => {
           {seminarsData.map((seminar) => (
             <div
               key={seminar.id}
-              className="group rounded-3xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/60 shadow-lg hover:shadow-xl hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-all duration-300 flex flex-col overflow-hidden"
+              className="group rounded-3xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/60 shadow-lg hover:border-amber-500/50 hover-lift transition-all duration-300 flex flex-col overflow-hidden"
             >
               {/* Image Banner */}
               <div className="relative aspect-[4/3] bg-slate-900 overflow-hidden cursor-pointer" onClick={() => setSelectedSeminar(seminar)}>

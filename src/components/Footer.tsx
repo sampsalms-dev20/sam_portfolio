@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
     <footer className="py-8 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800/80 text-slate-600 dark:text-slate-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         <p className="text-sm font-semibold text-slate-900 dark:text-slate-200">
-          © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+          • © {new Date().getFullYear()} {siteConfig.name}. All rights reserved. To God be the glory!
         </p>
         <button
           onClick={scrollToTop}

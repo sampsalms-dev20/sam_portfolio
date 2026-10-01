@@ -28,7 +28,7 @@ export const BadgeCard: React.FC<BadgeCardProps> = ({ badge, onSelect }) => {
   return (
     <div
       onClick={() => onSelect && onSelect(badge)}
-      className="group relative rounded-3xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/60 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer"
+      className="group relative rounded-3xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/60 shadow-lg hover-lift hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer"
     >
       {/* Top Banner Tag */}
       {badge.isPlaceholder && (

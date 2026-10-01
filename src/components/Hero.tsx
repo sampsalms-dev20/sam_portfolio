@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowRight, Award, ShieldCheck, Sparkles, BadgeCheck } from "lucide-react";
+import { ArrowRight, Award, Sparkles, BadgeCheck, Video } from "lucide-react";
 import { siteConfig } from "../data/config";
 
 export const Hero: React.FC = () => {
@@ -31,34 +31,25 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Column */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Status Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-800 text-amber-300 text-xs font-semibold shadow-xs">
-              <ShieldCheck className="w-4 h-4 text-amber-500" />
-              <span>Verified Credentials &amp; Digital Badges Showcase</span>
-            </div>
-
-            {/* Title & Subtitle */}
+          <div className="lg:col-span-7 space-y-6 text-center lg:text-left animate-fade-in-up">
+            {/* Title */}
             <div className="space-y-2">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                 {siteConfig.name}
               </h1>
-              <h2 className="text-xl sm:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-orange-400 to-indigo-400">
-                {siteConfig.title}
-              </h2>
             </div>
 
-            {/* Short Introduction */}
+            {/* Short Introduction (Single uniform color text with course & subject) */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Welcome to my digital credential portfolio. This space showcases my verified certificates of completion, technical skill badges, academic qualifications, and recognized achievements in Information Technology and Software Systems.
+              Welcome to my portfolio! I am Samson B. Molina, a student taking Bachelor of Science in Information Technology (BSIT 4E) at Partido State University - College of Engineering &amp; Computational Sciences. This portfolio is submitted as a midterm project for C225 - ST1: Seminars and Tours.
             </p>
 
-            {/* Credential Tags */}
+            {/* Academic & Skill Tags */}
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start pt-1">
-              {["Verified Certificates", "Technical Badges", "CSS NC II", "Web Development", "WebAR & 3D", "Git & CI/CD"].map((tag) => (
+              {["BSIT 4E", "C225 - ST1", "Seminars & Tours", "Information Technology", "Web Development", "CSS NC II"].map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 text-xs font-semibold bg-slate-800/80 text-slate-300 rounded-lg border border-slate-700/60 flex items-center gap-1.5"
+                  className="px-3 py-1 text-xs font-semibold bg-slate-800/80 text-slate-300 rounded-lg border border-slate-700/60 flex items-center gap-1.5 hover:border-amber-400/60 hover:scale-105 transition-all duration-300"
                 >
                   <Sparkles className="w-3 h-3 text-amber-500" />
                   {tag}
@@ -66,33 +57,41 @@ export const Hero: React.FC = () => {
               ))}
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Buttons (Seminars / Webinars -> Certificates -> Badges) */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-4">
               <button
-                onClick={() => scrollTo("certificates")}
-                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-bold text-sm shadow-lg shadow-amber-500/25 flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer"
+                onClick={() => scrollTo("seminars")}
+                className="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm shadow-lg shadow-amber-500/25 flex items-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
               >
-                <Award className="w-4 h-4" />
-                <span>Explore Certificates</span>
+                <Video className="w-4 h-4 text-slate-950" />
+                <span>Seminars / Webinars</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <button
-                onClick={() => scrollTo("badges")}
-                className="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700/80 text-slate-200 font-bold text-sm border border-slate-700 shadow-xs flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer"
+                onClick={() => scrollTo("certificates")}
+                className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-sm border border-cyan-500/40 hover:border-cyan-400 shadow-xs flex items-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
               >
-                <BadgeCheck className="w-4 h-4 text-purple-400" />
-                <span>View Digital Badges</span>
+                <Award className="w-4 h-4 text-cyan-400" />
+                <span>Certificates</span>
+              </button>
+
+              <button
+                onClick={() => scrollTo("badges")}
+                className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-sm border border-amber-500/40 hover:border-amber-400 shadow-xs flex items-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
+              >
+                <BadgeCheck className="w-4 h-4 text-amber-400" />
+                <span>Badges</span>
               </button>
             </div>
           </div>
 
           {/* Right Image / Avatar Column */}
-          <div className="lg:col-span-5 flex flex-col items-center justify-center">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center animate-float">
             <div className="relative group max-w-sm w-full flex flex-col items-center">
-              {/* Glowing Halo */}
+              {/* Glowing Halo in Blue & Gold dual colors */}
               <div
-                className={`absolute inset-0 bg-gradient-to-r from-amber-500 via-orange-500 to-purple-600 opacity-80 blur-xl group-hover:opacity-100 transition-all duration-700 ease-in-out ${
+                className={`absolute inset-0 bg-gradient-to-r from-cyan-500 via-amber-400 to-blue-600 opacity-80 blur-xl group-hover:opacity-100 animate-glow-pulse transition-all duration-700 ease-in-out ${
                   isCircle ? "rounded-full" : "rounded-3xl"
                 }`}
               />
@@ -101,7 +100,7 @@ export const Hero: React.FC = () => {
               <button
                 onClick={() => setIsCircle(!isCircle)}
                 title="Click profile photo to toggle shape"
-                className={`relative w-72 h-72 sm:w-80 sm:h-80 bg-white border-4 border-amber-500/90 shadow-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out hover:scale-[1.02] active:scale-[0.98] ${
+                className={`relative w-72 h-72 sm:w-80 sm:h-80 bg-white border-4 border-cyan-400 shadow-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out hover:scale-105 active:scale-95 ${
                   isCircle ? "rounded-full" : "rounded-3xl"
                 }`}
               >

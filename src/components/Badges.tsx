@@ -17,7 +17,7 @@ export const Badges: React.FC = () => {
             <span>Digital Achievements</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Badges &amp; Recognition
+            Badges
           </h2>
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Technical domain badges and specialized skill micro-credentials.

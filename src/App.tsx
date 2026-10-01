@@ -19,9 +19,9 @@ export function App() {
       {/* Main Sections */}
       <main>
         <Hero />
+        <Seminars />
         <Certificates />
         <Badges />
-        <Seminars />
       </main>
 
       {/* Footer */}

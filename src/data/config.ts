@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Samson B. Molina",
-  title: "Digital Credential & Certification Portfolio",
-  subtitle: "Verified Certificates • Technical Badges • Official Qualifications",
-  bio: "Official digital credential portfolio for Samson B. Molina, featuring verified certificates from Cisco Networking Academy, IBM SkillsBuild, PMI, and DICT Region V.",
+  title: "Bachelor of Science in Information Technology (BSIT 4E)",
+  subtitle: "Partido State University • College of Engineering & Computational Sciences",
+  bio: "Academic & Web Project Portfolio of Samson B. Molina, a BSIT 4E student at Partido State University - College of Engineering & Computational Sciences.",
   avatar: "./481181843_1009023147770845_2004971178604007032_n.jpg",
   githubUsername: "samsonmolina",
   githubUrl: "https://github.com/samsonmolina",

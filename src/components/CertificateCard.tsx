@@ -9,7 +9,7 @@ interface CertificateCardProps {
 
 export const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, onView }) => {
   return (
-    <div className="group rounded-3xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/60 shadow-lg hover:shadow-xl hover:border-amber-500/40 dark:hover:border-amber-500/40 transition-all duration-300 flex flex-col overflow-hidden">
+    <div className="group rounded-3xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/60 shadow-lg hover-lift hover:border-amber-500/50 transition-all duration-300 flex flex-col overflow-hidden">
       {/* Certificate Image Frame */}
       <div className="relative aspect-[4/3] bg-slate-100 dark:bg-slate-900 overflow-hidden">
         <img

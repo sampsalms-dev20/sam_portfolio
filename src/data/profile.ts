@@ -12,14 +12,14 @@ export interface InterestItem {
 }
 
 export const profileData = {
-  about: `I am a dedicated Information Technology student passionate about bridging hardware and software through modern web interfaces, 3D visualizations, and Augmented Reality (AR) applications. My focus is on creating interactive, accessible learning experiences and high-performance web solutions.`,
+  about: `I am Samson B. Molina, a 4th-year Information Technology student (BSIT 4E) at Partido State University under the College of Engineering & Computational Sciences. I am passionate about web development, interactive software applications, 3D/WebAR integration, and network administration.`,
   
   education: [
     {
-      degree: "Bachelor of Science in Information Technology",
-      institution: "State University / College",
-      period: "2023 - Present",
-      description: "Focusing on Software Engineering, Web Development, Network Administration, and Interactive Multimedia Systems."
+      degree: "Bachelor of Science in Information Technology (BSIT 4E)",
+      institution: "Partido State University • College of Engineering & Computational Sciences",
+      period: "2021 - Present",
+      description: "Focusing on Software Engineering, Web Application Development, System Administration, and Interactive Multimedia Systems."
     },
     {
       degree: "Senior High School - ICT Strand",

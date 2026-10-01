@@ -18,7 +18,7 @@ export const Certificates: React.FC = () => {
             <span>Official Credentials</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Certificates &amp; Training
+            Certificates
           </h2>
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Official certificates of completion, technical qualifications, and academic credentials.
