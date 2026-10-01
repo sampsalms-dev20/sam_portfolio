@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+  </defs>
+
+  <!-- Border & Background -->
+  <rect width="800" height="560" rx="12" fill="url(#certBg)" stroke="#e2e8f0" stroke-width="4" />
+  <rect x="20" y="20" width="760" height="520" rx="8" fill="none" stroke="url(#certGold)" stroke-width="3" stroke-dasharray="12 6" />
+  
+  <!-- Ribbon Seal -->
+  <circle cx="400" cy="90" r="35" fill="url(#certGold)" />
+  <path d="M400,65 L410,85 L430,85 L415,97 L420,117 L400,105 L380,117 L385,97 L370,85 L390,85 Z" fill="#ffffff" />
+
+  <!-- Header -->
+  <text x="400" y="160" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#1e293b" text-anchor="middle" letter-spacing="2">CERTIFICATE OF ACHIEVEMENT</text>
+  <text x="400" y="195" font-family="system-ui, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">THIS IS PROUDLY PRESENTED TO</text>
+
+  <!-- Student Name -->
+  <text x="400" y="250" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#0369a1" text-anchor="middle">Samson B. Molina</text>
+  <line x1="250" y1="265" x2="550" y2="265" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- Details -->
+  <text x="400" y="305" font-family="system-ui, sans-serif" font-size="16" fill="#334155" text-anchor="middle">For successfully completing the comprehensive training curriculum in</text>
+  <text x="400" y="335" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">Web Development &amp; Software Engineering</text>
+
+  <!-- Footer metadata -->
+  <text x="180" y="440" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#475569" text-anchor="middle">ISSUED DATE</text>
+  <text x="180" y="460" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a" text-anchor="middle">September 2026</text>
+  <line x1="100" y1="425" x2="260" y2="425" stroke="#cbd5e1" stroke-width="1" />
+
+  <text x="620" y="440" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#475569" text-anchor="middle">CREDENTIAL ID</text>
+  <text x="620" y="460" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a" text-anchor="middle">CERT-WEBDEV-2026</text>
+  <line x1="540" y1="425" x2="700" y2="425" stroke="#cbd5e1" stroke-width="1" />
+
+  <!-- Placeholder Badge Tag -->
+  <rect x="310" y="480" width="180" height="26" rx="13" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" />
+  <text x="400" y="497" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">SAMPLE PLACEHOLDER CERTIFICATE</text>
+</svg>
